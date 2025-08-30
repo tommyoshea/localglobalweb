@@ -96,27 +96,44 @@ function ContactForm() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Reset form after submission
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        businessName: '',
-        template: '',
-        cmsPages: '',
-        budget: '',
-        timeline: '',
-        message: ''
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
-      setIsSubmitted(false)
-    }, 5000)
+
+      const result = await response.json()
+
+      if (response.ok) {
+        setIsSubmitted(true)
+        // Reset form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          businessName: '',
+          template: '',
+          cmsPages: '',
+          budget: '',
+          timeline: '',
+          message: ''
+        })
+      } else {
+        throw new Error(result.error || 'Something went wrong')
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      alert('There was an error sending your message. Please try again or contact us directly.')
+    } finally {
+      setIsSubmitting(false)
+      // Reset submitted state after 5 seconds
+      setTimeout(() => {
+        setIsSubmitted(false)
+      }, 5000)
+    }
   }
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
