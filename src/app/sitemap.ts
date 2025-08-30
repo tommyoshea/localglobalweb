@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://localglobalweb.com'
+  const baseUrl = 'https://localglobalweb.vercel.app'
   
   return [
     {
