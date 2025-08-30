@@ -189,9 +189,9 @@ export default function FAQ() {
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                   {stat.customIcon ? (
                     <span className="text-white font-bold text-2xl">{stat.customIcon}</span>
-                  ) : (
+                  ) : stat.icon ? (
                     <stat.icon className="w-8 h-8 text-white" />
-                  )}
+                  ) : null}
                 </div>
                 <div className="text-2xl font-black text-gray-900 mb-2">{stat.label}</div>
                 <div className="text-sm text-gray-600">{stat.description}</div>
