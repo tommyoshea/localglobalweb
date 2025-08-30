@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: 'Testing Open Graph image display',
     images: [
       {
-        url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/localglobalweb-image.png` : 'http://localhost:3000/localglobalweb-image.png',
+        url: 'https://www.localglobalweb.com/localglobalweb-image.png',
         width: 1200,
         height: 630,
         alt: 'Test Open Graph Image'
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Test Open Graph Image',
     description: 'Testing Open Graph image display',
-    images: [process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/localglobalweb-image.png` : 'http://localhost:3000/localglobalweb-image.png']
+    images: ['https://www.localglobalweb.com/localglobalweb-image.png']
   }
 }
 
@@ -31,7 +31,7 @@ export default function TestOGPage() {
         
         <div className="bg-white p-6 rounded-lg shadow-md mb-6">
           <h2 className="text-xl font-semibold mb-4">Image Information</h2>
-          <p><strong>Image URL:</strong> {process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/localglobalweb-image.png` : 'http://localhost:3000/localglobalweb-image.png'}</p>
+          <p><strong>Image URL:</strong> https://www.localglobalweb.com/localglobalweb-image.png</p>
           <p><strong>Environment:</strong> {process.env.NODE_ENV}</p>
           <p><strong>Vercel URL:</strong> {process.env.VERCEL_URL || 'Not set'}</p>
         </div>
@@ -40,7 +40,7 @@ export default function TestOGPage() {
           <h2 className="text-xl font-semibold mb-4">Test Links</h2>
           <div className="space-y-2">
             <a 
-              href={process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/localglobalweb-image.png` : 'http://localhost:3000/localglobalweb-image.png'}
+              href="https://www.localglobalweb.com/localglobalweb-image.png"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline block"

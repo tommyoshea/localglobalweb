@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: 'Meet the Dublin web design team at LocalGlobalWeb. We\'re passionate about creating affordable, professional websites that help small businesses succeed online.',
           images: [
         {
-          url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/localglobalweb-image.png` : 'http://localhost:3000/localglobalweb-image.png',
+          url: 'https://www.localglobalweb.com/localglobalweb-image.png',
           width: 1200,
           height: 630,
           alt: 'About LocalGlobalWeb - Dublin Web Designers'
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Us | Dublin Web Designers | LocalGlobalWeb',
     description: 'Meet the Dublin web design team at LocalGlobalWeb. We\'re passionate about creating affordable, professional websites that help small businesses succeed online.',
-    images: [process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/localglobalweb-image.png` : 'http://localhost:3000/localglobalweb-image.png']
+    images: ['https://www.localglobalweb.com/localglobalweb-image.png']
   }
 }
 

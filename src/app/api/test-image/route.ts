@@ -23,7 +23,7 @@ export async function GET() {
       size: stats.size,
       created: stats.birthtime,
       modified: stats.mtime,
-      url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/localglobalweb-image.png` : 'http://localhost:3000/localglobalweb-image.png'
+      url: 'https://www.localglobalweb.com/localglobalweb-image.png'
     })
   } catch (error) {
     return NextResponse.json({

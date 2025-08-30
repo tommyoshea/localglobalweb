@@ -9,7 +9,7 @@ import ViewportMeta from '@/components/ViewportMeta'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
+  metadataBase: new URL('https://www.localglobalweb.com'),
   title: 'Web Design Dublin | Professional Website Designers Dublin | LocalGlobalWeb',
   description: 'Professional web design Dublin. Expert website designers Dublin creating affordable, responsive websites for small businesses. Get your Dublin business online with our award-winning web design services.',
   keywords: 'web design dublin, website designers dublin, web designers dublin, website design dublin, dublin web design, dublin website designers, affordable web design dublin, professional web design dublin, responsive web design dublin, small business web design dublin, ecommerce web design dublin, wordpress web design dublin, seo web design dublin',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'LocalGlobalWeb - Dublin Web Designers',
     images: [
       {
-        url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/localglobalweb-image.png` : 'http://localhost:3000/localglobalweb-image.png',
+        url: 'https://www.localglobalweb.com/localglobalweb-image.png',
         width: 1200,
         height: 630,
         alt: 'Dublin Web Design Services - LocalGlobalWeb'
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Web Design Dublin | Professional Website Designers Dublin',
     description: 'Professional web design Dublin. Expert website designers Dublin creating affordable, responsive websites for small businesses.',
-    images: [process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/localglobalweb-image.png` : 'http://localhost:3000/localglobalweb-image.png']
+    images: ['https://www.localglobalweb.com/localglobalweb-image.png']
   },
   alternates: {
-    canonical: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'
+    canonical: 'https://www.localglobalweb.com'
   },
   verification: {
     google: 'your-google-verification-code',
