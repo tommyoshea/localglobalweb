@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     // Email to you (Gmail)
     const emailToYou = {
       from: 'LocalGlobalWeb <hello@localglobalweb.com>',
-      to: ['your-gmail@gmail.com'], // Replace with your Gmail
+      to: ['localglobalweb@gmail.com'], // Replace with your Gmail
       subject: `New Website Inquiry from ${name} - ${businessName || 'No Business Name'}`,
       html: generateEmailTemplate({
         name,

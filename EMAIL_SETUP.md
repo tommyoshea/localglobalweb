@@ -23,7 +23,7 @@ Your contact form now sends beautiful HTML emails to both you and your customers
 #### 2. Add Environment Variables
 In your Vercel project settings, add:
 ```
-RESEND_API_KEY=your_resend_api_key_here
+RESEND_API_KEY=re_RZRNvcC1_LPaNNg1d9czXmhU4tFduyZnZ
 ```
 
 #### 3. Update Email Addresses
