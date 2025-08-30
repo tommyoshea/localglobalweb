@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   creator: 'LocalGlobalWeb',
   publisher: 'LocalGlobalWeb',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
   openGraph: {
     title: 'Web Design Dublin | Professional Website Designers Dublin',
     description: 'Professional web design Dublin. Expert website designers Dublin creating affordable, responsive websites for small businesses. Get your Dublin business online today.',
@@ -76,9 +82,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-      </head>
       <body className={inter.className}>
         <StructuredData />
         {children}
