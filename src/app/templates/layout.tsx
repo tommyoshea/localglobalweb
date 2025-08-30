@@ -1,32 +1,25 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Website Templates Dublin | Professional Web Design Portfolio | LocalGlobalWeb',
-  description: 'Browse our professional website templates designed for Dublin businesses. From electricians to solicitors, we have the perfect template for your industry. Professional web design portfolio showcasing our Dublin web design expertise.',
-  keywords: 'website templates dublin, dublin web design portfolio, dublin website templates, web design templates dublin, dublin web designers portfolio, professional website templates dublin, dublin web design examples, dublin website design portfolio, dublin web design showcase',
+  title: 'Website Templates | Professional Web Design Templates | LocalGlobalWeb',
+  description: 'Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more. Customizable templates designed for Dublin businesses.',
   openGraph: {
-    title: 'Website Templates Dublin | Professional Web Design Portfolio | LocalGlobalWeb',
-    description: 'Browse our professional website templates designed for Dublin businesses. From electricians to solicitors, we have the perfect template for your industry. Professional web design portfolio showcasing our Dublin web design expertise.',
-    type: 'website',
-    locale: 'en_IE',
-    siteName: 'LocalGlobalWeb - Dublin Web Designers',
+    title: 'Website Templates | Professional Web Design Templates | LocalGlobalWeb',
+    description: 'Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more. Customizable templates designed for Dublin businesses.',
     images: [
       {
-        url: '/templates-og-image.jpg',
+        url: '/api/og?title=Website Templates | Professional Web Design&description=Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more.',
         width: 1200,
         height: 630,
-        alt: 'Website Templates Dublin - LocalGlobalWeb Portfolio'
+        alt: 'Professional Website Templates - LocalGlobalWeb'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Website Templates Dublin | Professional Web Design Portfolio | LocalGlobalWeb',
-    description: 'Browse our professional website templates designed for Dublin businesses. Professional web design portfolio showcasing our Dublin web design expertise.',
-    images: ['/templates-og-image.jpg']
-  },
-  alternates: {
-    canonical: 'https://localglobalweb.com/templates'
+    title: 'Website Templates | Professional Web Design Templates | LocalGlobalWeb',
+    description: 'Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more. Customizable templates designed for Dublin businesses.',
+    images: ['/api/og?title=Website Templates | Professional Web Design&description=Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more.']
   }
 }
 

@@ -1,32 +1,25 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Web Design FAQ Dublin | Common Questions | LocalGlobalWeb',
-  description: 'Get answers to common questions about web design services in Dublin. From pricing to timelines, find everything you need to know about our Dublin web design services. Expert answers from Dublin web designers.',
-  keywords: 'web design faq dublin, dublin web design faq, website design faq dublin, dublin web designers faq, web design questions dublin, dublin web design help, dublin website design faq, dublin web design common questions',
+  title: 'FAQ | Frequently Asked Questions | LocalGlobalWeb',
+  description: 'Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and what makes LocalGlobalWeb the best choice for your website.',
   openGraph: {
-    title: 'Web Design FAQ Dublin | Common Questions | LocalGlobalWeb',
-    description: 'Get answers to common questions about web design services in Dublin. From pricing to timelines, find everything you need to know about our Dublin web design services. Expert answers from Dublin web designers.',
-    type: 'website',
-    locale: 'en_IE',
-    siteName: 'LocalGlobalWeb - Dublin Web Designers',
+    title: 'FAQ | Frequently Asked Questions | LocalGlobalWeb',
+    description: 'Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and what makes LocalGlobalWeb the best choice for your website.',
     images: [
       {
-        url: '/faq-og-image.jpg',
+        url: '/api/og?title=FAQ | Frequently Asked Questions&description=Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and services.',
         width: 1200,
         height: 630,
-        alt: 'Web Design FAQ Dublin - LocalGlobalWeb'
+        alt: 'FAQ - LocalGlobalWeb Dublin Web Designers'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Web Design FAQ Dublin | Common Questions | LocalGlobalWeb',
-    description: 'Get answers to common questions about web design services in Dublin. From pricing to timelines, find everything you need to know about our Dublin web design services.',
-    images: ['/faq-og-image.jpg']
-  },
-  alternates: {
-    canonical: 'https://localglobalweb.com/faq'
+    title: 'FAQ | Frequently Asked Questions | LocalGlobalWeb',
+    description: 'Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and what makes LocalGlobalWeb the best choice for your website.',
+    images: ['/api/og?title=FAQ | Frequently Asked Questions&description=Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and services.']
   }
 }
 

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'LocalGlobalWeb - Dublin Web Designers',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/api/og-static',
         width: 1200,
         height: 630,
         alt: 'Dublin Web Design Services - LocalGlobalWeb'
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Web Design Dublin | Professional Website Designers Dublin',
     description: 'Professional web design Dublin. Expert website designers Dublin creating affordable, responsive websites for small businesses.',
-    images: ['/og-image.jpg']
+    images: ['/api/og-static']
   },
   alternates: {
     canonical: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'
