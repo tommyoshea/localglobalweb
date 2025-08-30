@@ -4,6 +4,7 @@ import './globals.css'
 import CookieNotification from '@/components/CookieNotification'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import StructuredData from '@/components/StructuredData'
+import ViewportMeta from '@/components/ViewportMeta'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,12 +17,6 @@ export const metadata: Metadata = {
   creator: 'LocalGlobalWeb',
   publisher: 'LocalGlobalWeb',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
   openGraph: {
     title: 'Web Design Dublin | Professional Website Designers Dublin',
     description: 'Professional web design Dublin. Expert website designers Dublin creating affordable, responsive websites for small businesses. Get your Dublin business online today.',
@@ -83,6 +78,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ViewportMeta />
         <StructuredData />
         {children}
         <CookieNotification />
