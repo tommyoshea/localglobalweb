@@ -8,7 +8,7 @@ import StructuredData from '@/components/StructuredData'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://localglobalweb.vercel.app'),
+  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
   title: 'Web Design Dublin | Professional Website Designers Dublin | LocalGlobalWeb',
   description: 'Professional web design Dublin. Expert website designers Dublin creating affordable, responsive websites for small businesses. Get your Dublin business online with our award-winning web design services.',
   keywords: 'web design dublin, website designers dublin, web designers dublin, website design dublin, dublin web design, dublin website designers, affordable web design dublin, professional web design dublin, responsive web design dublin, small business web design dublin, ecommerce web design dublin, wordpress web design dublin, seo web design dublin',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg']
   },
   alternates: {
-    canonical: 'https://localglobalweb.vercel.app'
+    canonical: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'
   },
   verification: {
     google: 'your-google-verification-code',
