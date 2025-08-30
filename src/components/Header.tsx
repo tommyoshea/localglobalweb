@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, X, Rocket } from 'lucide-react'
 import Logo from './Logo'
@@ -17,6 +17,31 @@ const Header = () => {
       handleToggleMenu()
     }
   }
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element
+      if (isMenuOpen && !target.closest('#mobile-menu') && !target.closest('button')) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    document.addEventListener('click', handleClickOutside)
+    return () => document.removeEventListener('click', handleClickOutside)
+  }, [isMenuOpen])
+
+  // Close menu on escape key
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isMenuOpen) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    document.addEventListener('keydown', handleEscape)
+    return () => document.removeEventListener('keydown', handleEscape)
+  }, [isMenuOpen])
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -73,10 +98,11 @@ const Header = () => {
           <button
             onClick={handleToggleMenu}
             onKeyDown={handleKeyDown}
-            className="md:hidden p-3 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300"
+            className="md:hidden p-3 rounded-xl text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 touch-manipulation"
             aria-label="Toggle mobile menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
+            type="button"
           >
             {isMenuOpen ? (
               <X className="w-6 h-6" />
@@ -99,7 +125,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-300 font-semibold"
+                  className="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-300 font-semibold touch-manipulation"
                   onClick={() => setIsMenuOpen(false)}
                   tabIndex={0}
                   aria-label={`Navigate to ${item.name} page`}
@@ -109,7 +135,7 @@ const Header = () => {
               ))}
               <Link
                 href="/contact"
-                className="block px-4 py-3 mt-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-xl text-center shadow-lg"
+                className="block px-4 py-3 mt-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-xl text-center shadow-lg touch-manipulation"
                 onClick={() => setIsMenuOpen(false)}
                 tabIndex={0}
                 aria-label="Get started with your website"
