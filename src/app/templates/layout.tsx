@@ -6,20 +6,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Website Templates | Professional Web Design Templates | LocalGlobalWeb',
     description: 'Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more. Customizable templates designed for Dublin businesses.',
-    images: [
-      {
-        url: '/api/og?title=Website Templates | Professional Web Design&description=Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more.',
-        width: 1200,
-        height: 630,
-        alt: 'Professional Website Templates - LocalGlobalWeb'
-      }
-    ]
+          images: [
+        {
+          url: '/localglobalweb-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'Professional Website Templates - LocalGlobalWeb'
+        }
+      ]
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Website Templates | Professional Web Design Templates | LocalGlobalWeb',
     description: 'Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more. Customizable templates designed for Dublin businesses.',
-    images: ['/api/og?title=Website Templates | Professional Web Design&description=Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more.']
+    images: ['/localglobalweb-image.png']
   }
 }
 

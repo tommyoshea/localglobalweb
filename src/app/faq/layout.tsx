@@ -6,20 +6,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FAQ | Frequently Asked Questions | LocalGlobalWeb',
     description: 'Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and what makes LocalGlobalWeb the best choice for your website.',
-    images: [
-      {
-        url: '/api/og?title=FAQ | Frequently Asked Questions&description=Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and services.',
-        width: 1200,
-        height: 630,
-        alt: 'FAQ - LocalGlobalWeb Dublin Web Designers'
-      }
-    ]
+          images: [
+        {
+          url: '/localglobalweb-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'FAQ - LocalGlobalWeb Dublin Web Designers'
+        }
+      ]
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FAQ | Frequently Asked Questions | LocalGlobalWeb',
     description: 'Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and what makes LocalGlobalWeb the best choice for your website.',
-    images: ['/api/og?title=FAQ | Frequently Asked Questions&description=Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and services.']
+    images: ['/localglobalweb-image.png']
   }
 }
 

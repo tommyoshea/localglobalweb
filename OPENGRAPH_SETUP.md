@@ -6,10 +6,10 @@ Your website now has dynamic Open Graph images that will display beautifully whe
 
 ## ✅ **What's Implemented:**
 
-### **1. Dynamic Open Graph Image Generation**
-- **API Route**: `/api/og` - Generates custom images with dynamic titles and descriptions
-- **Static Route**: `/api/og-static` - Fallback image for the homepage
-- **Page-Specific Images**: Each page has its own custom preview image
+### **1. Static Open Graph Image**
+- **Image File**: `/localglobalweb-image.png` - Your custom preview image from the public folder
+- **Consistent Branding**: Same professional image across all pages
+- **Fast Loading**: Static file for optimal performance
 
 ### **2. Page-Specific Metadata**
 - **Homepage**: General web design services
@@ -37,7 +37,7 @@ Your website now has dynamic Open Graph images that will display beautifully whe
 ### **Technical Specifications:**
 - **Dimensions**: 1200x630px (optimal for social media)
 - **Format**: PNG with transparency support
-- **Performance**: Edge runtime for fast generation
+- **Performance**: Static file for instant loading
 - **Caching**: Automatic caching by social platforms
 
 ## 🔧 **How to Test:**
@@ -121,9 +121,9 @@ Replace the emoji with your actual logo:
 ## 🚨 **Troubleshooting:**
 
 ### **Images Not Showing:**
-1. **Check URL**: Ensure the API routes are accessible
+1. **Check URL**: Ensure the image file is accessible at `/localglobalweb-image.png`
 2. **Clear Cache**: Social platforms cache images for 24 hours
-3. **Test Direct**: Visit `/api/og-static` directly in browser
+3. **Test Direct**: Visit `/localglobalweb-image.png` directly in browser
 4. **Check Console**: Look for any errors in browser console
 
 ### **Wrong Image Displaying:**
@@ -132,9 +132,9 @@ Replace the emoji with your actual logo:
 3. **Test Different Pages**: Each page should show different images
 
 ### **Performance Issues:**
-1. **Edge Runtime**: Images generate on edge for speed
+1. **Static File**: Image loads instantly from public folder
 2. **Caching**: Social platforms cache images automatically
-3. **Optimization**: Images are optimized for web delivery
+3. **Optimization**: Static file for optimal performance
 
 ## 📊 **Benefits:**
 
