@@ -2,6 +2,20 @@ import { NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
 
+interface FileInfo {
+  exists: boolean
+  path: string
+  size: number
+  sizeInMB: string
+  created: Date
+  modified: Date
+  url: string
+  readable?: boolean
+  bufferSize?: number
+  isValidPNG?: boolean
+  readError?: string
+}
+
 export async function GET() {
   try {
     const imagePath = path.join(process.cwd(), 'public', 'localglobalweb-image.png')
@@ -16,8 +30,8 @@ export async function GET() {
 
     const stats = fs.statSync(imagePath)
     
-    // Basic file info
-    const fileInfo = {
+    // Basic file info with proper typing
+    const fileInfo: FileInfo = {
       exists: true,
       path: imagePath,
       size: stats.size,
