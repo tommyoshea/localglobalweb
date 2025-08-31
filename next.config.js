@@ -5,6 +5,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Redirect root domain to www
       {
         source: '/:path*',
         has: [
