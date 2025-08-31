@@ -108,19 +108,19 @@ function ContactForm() {
       const result = await response.json()
 
       if (response.ok) {
-        setIsSubmitted(true)
+    setIsSubmitted(true)
         // Reset form after successful submission
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          businessName: '',
-          template: '',
-          cmsPages: '',
-          budget: '',
-          timeline: '',
-          message: ''
-        })
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        businessName: '',
+        template: '',
+        cmsPages: '',
+        budget: '',
+        timeline: '',
+        message: ''
+      })
       } else {
         throw new Error(result.error || 'Something went wrong')
       }
@@ -131,8 +131,8 @@ function ContactForm() {
       setIsSubmitting(false)
       // Reset submitted state after 5 seconds
       setTimeout(() => {
-        setIsSubmitted(false)
-      }, 5000)
+      setIsSubmitted(false)
+    }, 5000)
     }
   }
 
