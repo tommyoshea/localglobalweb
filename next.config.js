@@ -16,12 +16,6 @@ const nextConfig = {
         destination: 'https://www.localglobalweb.com/:path*',
         permanent: true,
       },
-      {
-        source: '/:path*',
-        protocol: 'http',
-        destination: 'https://www.localglobalweb.com/:path*',
-        permanent: true,
-      },
     ];
   },
   async rewrites() {
