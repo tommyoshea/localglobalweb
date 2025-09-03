@@ -13,6 +13,7 @@ const Logo = ({ className = "w-32 h-8", color = "currentColor" }: { className?: 
         height={32}
         className="w-full h-full object-contain"
         priority
+        style={{ filter: color === 'white' ? 'brightness(0) invert(1)' : 'none' }}
       />
     </div>
   )

@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight, Sparkles, Zap, Smartphone, Star, Rocket, Target, Award, Palette } from 'lucide-react'
-import Logo from './Logo' // Added import for Logo
 
 const Hero = () => {
   const handleGetStarted = () => {
@@ -76,14 +75,7 @@ const Hero = () => {
               🚀 Transform Your Business Online
             </motion.div>
             
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.25 }}
-              className="mb-8 flex justify-center lg:justify-start"
-            >
-              <Logo className="w-40 h-10" />
-            </motion.div>
+
             
             <motion.h1
               initial={{ opacity: 0, y: 30 }}

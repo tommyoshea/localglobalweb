@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Rocket } from 'lucide-react'
 import Logo from './Logo'
 
 const Header = () => {
@@ -55,14 +55,16 @@ const Header = () => {
       <div className="container-max">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link 
-            href="/" 
-            className="flex items-center space-x-3 group"
-            tabIndex={0}
-            aria-label="Go to homepage"
-          >
-            <Logo className="w-40 h-10" />
-          </Link>
+          <div className="flex-1 flex justify-center md:justify-start">
+            <Link 
+              href="/" 
+              className="flex items-center space-x-3 group"
+              tabIndex={0}
+              aria-label="Go to homepage"
+            >
+              <Logo className="w-52 h-13" />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

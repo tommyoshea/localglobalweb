@@ -161,10 +161,7 @@ const Footer = () => {
               tabIndex={0}
               aria-label="Go to homepage"
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <Rocket className="w-7 h-7 text-white" />
-              </div>
-              <Logo className="w-28 h-7" />
+              <Logo className="w-44 h-11" color="white" />
             </Link>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
               We craft stunning, lightning-fast websites that turn visitors into customers. 

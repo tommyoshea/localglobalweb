@@ -17,6 +17,16 @@ export const metadata: Metadata = {
   creator: 'LocalGlobalWeb',
   publisher: 'LocalGlobalWeb',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon0.svg', type: 'image/svg+xml' },
+      { url: '/icon1.png', type: 'image/png' }
+    ],
+    apple: '/apple-icon.png',
+    shortcut: '/favicon.ico'
+  },
+  manifest: '/manifest.json',
   openGraph: {
     title: 'Web Design Dublin | Professional Website Designers Dublin',
     description: 'Professional web design Dublin. Expert website designers Dublin creating affordable, responsive websites for small businesses. Get your Dublin business online today.',
