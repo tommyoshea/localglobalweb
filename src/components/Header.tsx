@@ -61,7 +61,7 @@ const Header = () => {
             tabIndex={0}
             aria-label="Go to homepage"
           >
-            <Logo className="w-32 h-8" />
+            <Logo className="w-40 h-10" />
           </Link>
 
           {/* Desktop Navigation */}
