@@ -57,16 +57,14 @@ const Header = () => {
           {/* Logo */}
           <Link 
             href="/" 
-            className="flex items-center space-x-3 text-2xl font-black group"
+            className="flex items-center space-x-3 group"
             tabIndex={0}
             aria-label="Go to homepage"
           >
-                         <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-               <Logo className="w-6 h-6 text-white" />
-             </div>
-            <span className="bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
-              LocalGlobalWeb
-            </span>
+            <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <Rocket className="w-6 h-6 text-white" />
+            </div>
+            <Logo className="w-32 h-8" />
           </Link>
 
           {/* Desktop Navigation */}

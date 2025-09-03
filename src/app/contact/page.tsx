@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { useSearchParams } from 'next/navigation'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Logo from '@/components/Logo'
 import { Mail, Phone, MapPin, Send, CheckCircle, ArrowRight, Sparkles, Rocket, Star, Zap, Globe, Shield } from 'lucide-react'
 
 function ContactForm() {
@@ -197,6 +198,15 @@ function ContactForm() {
           >
               <Sparkles className="w-5 h-5 mr-2 animate-pulse" />
               🚀 Let's Build Something Amazing
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.15 }}
+              className="mb-8"
+            >
+              <Logo className="w-40 h-10" />
             </motion.div>
             
             <motion.h1 

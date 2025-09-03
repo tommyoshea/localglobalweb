@@ -155,18 +155,16 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-1"
           >
-            <Link 
-              href="/" 
-              className="flex items-center space-x-3 text-2xl font-black mb-8 group"
+            <Link
+              href="/"
+              className="flex items-center space-x-3 mb-8 group"
               tabIndex={0}
               aria-label="Go to homepage"
             >
               <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <Logo className="w-7 h-7 text-white" />
+                <Rocket className="w-7 h-7 text-white" />
               </div>
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                LocalGlobalWeb
-              </span>
+              <Logo className="w-28 h-7" />
             </Link>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
               We craft stunning, lightning-fast websites that turn visitors into customers. 
