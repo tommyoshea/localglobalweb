@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Menu, X, Rocket } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import Logo from './Logo'
 
 const Header = () => {
@@ -61,9 +61,6 @@ const Header = () => {
             tabIndex={0}
             aria-label="Go to homepage"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-              <Rocket className="w-6 h-6 text-white" />
-            </div>
             <Logo className="w-32 h-8" />
           </Link>
 
