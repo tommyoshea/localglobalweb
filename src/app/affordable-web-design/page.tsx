@@ -1,48 +1,9 @@
-import type { Metadata } from 'next'
+'use client'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { DollarSign, Clock, CheckCircle, Star, Users, Award, Zap, Smartphone, Search, Palette, Shield, ArrowRight, Rocket, TrendingUp, Target, Globe, Heart, Sparkles } from 'lucide-react'
 import Link from 'next/link'
-
-export const metadata: Metadata = {
-  title: 'Affordable Web Design Dublin | Budget-Friendly Website Designers | LocalGlobalWeb',
-  description: 'Get professional affordable web design Dublin services starting from €299. Expert website designers creating stunning, responsive websites for small businesses. Quality web design that fits your budget.',
-  keywords: 'affordable web design dublin, cheap website design dublin, budget web design dublin, low cost website design dublin, affordable website designers dublin, cheap web designers dublin, budget website design dublin, affordable web design ireland, cheap website design ireland, budget web design ireland, low cost web design dublin, affordable responsive web design dublin, cheap mobile website design dublin, budget ecommerce web design dublin, affordable seo web design dublin',
-  authors: [{ name: 'LocalGlobalWeb - Affordable Web Design Dublin' }],
-  creator: 'LocalGlobalWeb',
-  publisher: 'LocalGlobalWeb',
-  robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
-  openGraph: {
-    title: 'Affordable Web Design Dublin | Budget-Friendly Website Designers',
-    description: 'Get professional affordable web design Dublin services starting from €299. Expert website designers creating stunning, responsive websites for small businesses.',
-    type: 'website',
-    locale: 'en_IE',
-    siteName: 'LocalGlobalWeb - Affordable Web Design Dublin',
-    images: [
-      {
-        url: 'https://www.localglobalweb.com/localglobalweb-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Affordable Web Design Dublin - LocalGlobalWeb'
-      }
-    ]
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Affordable Web Design Dublin | Budget-Friendly Website Designers',
-    description: 'Get professional affordable web design Dublin services starting from €299. Expert website designers creating stunning, responsive websites for small businesses.',
-    images: ['https://www.localglobalweb.com/localglobalweb-image.png']
-  },
-  alternates: {
-    canonical: 'https://www.localglobalweb.com/affordable-web-design'
-  },
-  other: {
-    'geo.region': 'IE-D',
-    'geo.placename': 'Dublin, Ireland',
-    'geo.position': '53.3498;-6.2603',
-    'ICBM': '53.3498, -6.2603'
-  }
-}
 
 const AffordableWebDesign = () => {
   const handleGetQuote = () => {
