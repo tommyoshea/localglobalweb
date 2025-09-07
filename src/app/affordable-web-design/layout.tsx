@@ -72,7 +72,12 @@ export default function AffordableWebDesignLayout({
                 "contactType": "customer service",
                 "areaServed": "IE",
                 "availableLanguage": "English"
-              }
+              },
+              "sameAs": [
+                "https://www.facebook.com/localglobalweb",
+                "https://www.linkedin.com/company/localglobalweb",
+                "https://www.twitter.com/localglobalweb"
+              ]
             },
             "areaServed": {
               "@type": "City",
@@ -83,79 +88,58 @@ export default function AffordableWebDesignLayout({
               }
             },
             "serviceType": "Web Design",
-            "offers": [
-              {
-                "@type": "Offer",
-                "name": "Starter Web Design Package",
-                "description": "Perfect for small businesses getting started online",
-                "price": "299",
-                "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock"
-              },
-              {
-                "@type": "Offer",
-                "name": "Professional Web Design Package",
-                "description": "Ideal for growing businesses with more content needs",
-                "price": "599",
-                "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock"
-              },
-              {
-                "@type": "Offer",
-                "name": "Premium Web Design Package",
-                "description": "Complete solution for established businesses",
-                "price": "999",
-                "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock"
-              }
-            ],
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "itemReviewed": {
-                "@type": "Service",
-                "name": "Affordable Web Design Dublin"
-              },
-              "ratingValue": "4.9",
-              "reviewCount": "127",
-              "bestRating": "5",
-              "worstRating": "1"
+            "category": "Web Development",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Affordable Web Design Packages",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Starter Web Design Package",
+                    "description": "Perfect for small businesses getting started online"
+                  },
+                  "price": "299",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "validFrom": "2024-01-01"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Professional Web Design Package",
+                    "description": "Ideal for growing businesses with more content needs"
+                  },
+                  "price": "599",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "validFrom": "2024-01-01"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Premium Web Design Package",
+                    "description": "Complete solution for established businesses"
+                  },
+                  "price": "999",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/InStock",
+                  "validFrom": "2024-01-01"
+                }
+              ]
             },
-            "review": [
-              {
-                "@type": "Review",
-                "itemReviewed": {
-                  "@type": "Service",
-                  "name": "Affordable Web Design Dublin"
-                },
-                "author": {
-                  "@type": "Person",
-                  "name": "Sarah O'Brien"
-                },
-                "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": "5",
-                  "bestRating": "5"
-                },
-                "reviewBody": "LocalGlobalWeb delivered an amazing website for our coffee shop at an incredible price. We're getting more customers than ever!"
-              },
-              {
-                "@type": "Review",
-                "itemReviewed": {
-                  "@type": "Service",
-                  "name": "Affordable Web Design Dublin"
-                },
-                "author": {
-                  "@type": "Person",
-                  "name": "Michael Murphy"
-                },
-                "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": "5",
-                  "bestRating": "5"
-                },
-                "reviewBody": "Professional service, fair pricing, and our new website has brought in so many new customers. Highly recommended!"
-              }
-            ]
+            "serviceOutput": {
+              "@type": "WebSite",
+              "name": "Custom Business Website",
+              "description": "Responsive, SEO-optimized website for Dublin businesses"
+            },
+            "audience": {
+              "@type": "BusinessAudience",
+              "audienceType": "Small Business Owners"
+            }
           })
         }}
       />

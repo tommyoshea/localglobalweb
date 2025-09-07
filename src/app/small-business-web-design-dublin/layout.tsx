@@ -65,6 +65,13 @@ export default function SmallBusinessWebDesignDublinLayout({
                 "@type": "PostalAddress",
                 "addressLocality": "Dublin",
                 "addressCountry": "IE"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+353-1-XXX-XXXX",
+                "contactType": "customer service",
+                "areaServed": "IE",
+                "availableLanguage": "English"
               }
             },
             "areaServed": {
@@ -76,19 +83,71 @@ export default function SmallBusinessWebDesignDublinLayout({
               }
             },
             "serviceType": "Small Business Web Design",
-            "offers": {
-              "@type": "Offer",
+            "category": "Web Development",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
               "name": "Small Business Web Design Services",
-              "description": "Affordable web design for small businesses and local companies",
-              "availability": "https://schema.org/InStock"
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Local Shop Website",
+                    "description": "Perfect for retail stores, boutiques, and local shops"
+                  },
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Service Business Website",
+                    "description": "Ideal for salons, gyms, restaurants, and service providers"
+                  },
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Startup Website",
+                    "description": "Great for new businesses and growing companies"
+                  },
+                  "availability": "https://schema.org/InStock"
+                }
+              ]
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "203",
-              "bestRating": "5",
-              "worstRating": "1"
-            }
+            "serviceOutput": {
+              "@type": "WebSite",
+              "name": "Small Business Website",
+              "description": "Affordable, local SEO-optimized website for Dublin small businesses"
+            },
+            "audience": {
+              "@type": "BusinessAudience",
+              "audienceType": "Small Business Owners"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Local SEO",
+                "value": "Optimized"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Budget-Friendly",
+                "value": "Yes"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Quick Setup",
+                "value": "7-14 days"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Local Focus",
+                "value": "Dublin businesses"
+              }
+            ]
           })
         }}
       />

@@ -65,6 +65,13 @@ export default function ResponsiveWebDesignDublinLayout({
                 "@type": "PostalAddress",
                 "addressLocality": "Dublin",
                 "addressCountry": "IE"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+353-1-XXX-XXXX",
+                "contactType": "customer service",
+                "areaServed": "IE",
+                "availableLanguage": "English"
               }
             },
             "areaServed": {
@@ -76,19 +83,66 @@ export default function ResponsiveWebDesignDublinLayout({
               }
             },
             "serviceType": "Responsive Web Design",
-            "offers": {
-              "@type": "Offer",
+            "category": "Web Development",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
               "name": "Responsive Web Design Services",
-              "description": "Mobile-first responsive web design for all devices",
-              "availability": "https://schema.org/InStock"
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Mobile-First Web Design",
+                    "description": "Responsive design optimized for mobile devices first"
+                  },
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Cross-Device Optimization",
+                    "description": "Perfect display on phones, tablets, and desktops"
+                  },
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Responsive Redesign",
+                    "description": "Convert existing websites to responsive design"
+                  },
+                  "availability": "https://schema.org/InStock"
+                }
+              ]
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "89",
-              "bestRating": "5",
-              "worstRating": "1"
-            }
+            "serviceOutput": {
+              "@type": "WebSite",
+              "name": "Responsive Business Website",
+              "description": "Mobile-optimized website that works on all devices"
+            },
+            "audience": {
+              "@type": "BusinessAudience",
+              "audienceType": "Businesses needing mobile optimization"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Mobile Optimization",
+                "value": "100%"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Device Compatibility",
+                "value": "All devices"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Load Speed",
+                "value": "Under 2 seconds"
+              }
+            ]
           })
         }}
       />

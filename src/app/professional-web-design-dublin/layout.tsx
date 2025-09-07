@@ -65,7 +65,15 @@ export default function ProfessionalWebDesignDublinLayout({
                 "@type": "PostalAddress",
                 "addressLocality": "Dublin",
                 "addressCountry": "IE"
-              }
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+353-1-XXX-XXXX",
+                "contactType": "customer service",
+                "areaServed": "IE",
+                "availableLanguage": "English"
+              },
+              "award": "Award-Winning Web Design Agency"
             },
             "areaServed": {
               "@type": "City",
@@ -76,19 +84,71 @@ export default function ProfessionalWebDesignDublinLayout({
               }
             },
             "serviceType": "Professional Web Design",
-            "offers": {
-              "@type": "Offer",
+            "category": "Web Development",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
               "name": "Professional Web Design Services",
-              "description": "Award-winning professional web design for businesses",
-              "availability": "https://schema.org/InStock"
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Corporate Website Design",
+                    "description": "Professional corporate websites that build credibility"
+                  },
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Business Portal Development",
+                    "description": "Advanced business portals with enterprise features"
+                  },
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Brand Identity Design",
+                    "description": "Complete brand identity and professional web presence"
+                  },
+                  "availability": "https://schema.org/InStock"
+                }
+              ]
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "156",
-              "bestRating": "5",
-              "worstRating": "1"
-            }
+            "serviceOutput": {
+              "@type": "WebSite",
+              "name": "Professional Business Website",
+              "description": "Award-winning professional website that builds trust and credibility"
+            },
+            "audience": {
+              "@type": "BusinessAudience",
+              "audienceType": "Professional Businesses"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Design Quality",
+                "value": "Award-Winning"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Business Focus",
+                "value": "100%"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Trust Building",
+                "value": "Enhanced"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Security Level",
+                "value": "Enterprise-Grade"
+              }
+            ]
           })
         }}
       />
