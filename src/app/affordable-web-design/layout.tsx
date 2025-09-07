@@ -111,6 +111,10 @@ export default function AffordableWebDesignLayout({
             ],
             "aggregateRating": {
               "@type": "AggregateRating",
+              "itemReviewed": {
+                "@type": "Service",
+                "name": "Affordable Web Design Dublin"
+              },
               "ratingValue": "4.9",
               "reviewCount": "127",
               "bestRating": "5",
@@ -119,6 +123,10 @@ export default function AffordableWebDesignLayout({
             "review": [
               {
                 "@type": "Review",
+                "itemReviewed": {
+                  "@type": "Service",
+                  "name": "Affordable Web Design Dublin"
+                },
                 "author": {
                   "@type": "Person",
                   "name": "Sarah O'Brien"
@@ -132,6 +140,10 @@ export default function AffordableWebDesignLayout({
               },
               {
                 "@type": "Review",
+                "itemReviewed": {
+                  "@type": "Service",
+                  "name": "Affordable Web Design Dublin"
+                },
                 "author": {
                   "@type": "Person",
                   "name": "Michael Murphy"
