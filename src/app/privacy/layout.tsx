@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: ['/privacy-og-image.jpg']
   },
   alternates: {
-    canonical: 'https://localglobalweb.com/privacy'
+    canonical: 'https://www.localglobalweb.com/privacy'
   }
 }
 

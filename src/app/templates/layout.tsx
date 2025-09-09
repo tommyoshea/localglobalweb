@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     title: 'Website Templates | Professional Web Design Templates | LocalGlobalWeb',
     description: 'Browse our collection of professional website templates for electricians, plumbers, chemists, solicitors and more. Customizable templates designed for Dublin businesses.',
     images: ['https://www.localglobalweb.com/localglobalweb-image.png']
+  },
+  alternates: {
+    canonical: 'https://www.localglobalweb.com/templates'
   }
 }
 

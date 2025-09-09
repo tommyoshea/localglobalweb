@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     title: 'FAQ | Frequently Asked Questions | LocalGlobalWeb',
     description: 'Find answers to frequently asked questions about web design services in Dublin. Learn about our process, pricing, and what makes LocalGlobalWeb the best choice for your website.',
     images: ['https://www.localglobalweb.com/localglobalweb-image.png']
+  },
+  alternates: {
+    canonical: 'https://www.localglobalweb.com/faq'
   }
 }
 

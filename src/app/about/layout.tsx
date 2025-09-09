@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     title: 'About Us | Dublin Web Designers | LocalGlobalWeb',
     description: 'Meet the Dublin web design team at LocalGlobalWeb. We\'re passionate about creating affordable, professional websites that help small businesses succeed online.',
     images: ['https://www.localglobalweb.com/localglobalweb-image.png']
+  },
+  alternates: {
+    canonical: 'https://www.localglobalweb.com/about'
   }
 }
 

@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     title: 'Contact Us | Dublin Web Designers | LocalGlobalWeb',
     description: 'Get in touch with Dublin\'s leading web designers. Contact LocalGlobalWeb for a free consultation and quote on your website project.',
     images: ['https://www.localglobalweb.com/localglobalweb-image.png']
+  },
+  alternates: {
+    canonical: 'https://www.localglobalweb.com/contact'
   }
 }
 

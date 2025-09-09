@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: ['/terms-og-image.jpg']
   },
   alternates: {
-    canonical: 'https://localglobalweb.com/terms'
+    canonical: 'https://www.localglobalweb.com/terms'
   }
 }
 
