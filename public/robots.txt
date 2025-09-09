@@ -1,0 +1,52 @@
+# Robots.txt for LocalGlobalWeb - Dublin Web Design Services
+# https://www.localglobalweb.com
+
+# Allow all search engines to crawl all content
+User-agent: *
+Allow: /
+
+# Disallow crawling of admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow crawling of important pages
+Allow: /affordable-web-design
+Allow: /responsive-web-design-dublin
+Allow: /professional-web-design-dublin
+Allow: /small-business-web-design-dublin
+Allow: /templates/
+Allow: /about
+Allow: /contact
+Allow: /process
+Allow: /faq
+
+# Sitemap location
+Sitemap: https://www.localglobalweb.com/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

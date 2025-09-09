@@ -1,47 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://www.localglobalweb.com/</loc>
     <lastmod>2025-01-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Main Service Pages -->
   <url>
     <loc>https://www.localglobalweb.com/about</loc>
     <lastmod>2025-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
   <url>
     <loc>https://www.localglobalweb.com/contact</loc>
     <lastmod>2025-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  
   <url>
     <loc>https://www.localglobalweb.com/templates</loc>
     <lastmod>2025-01-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  
   <url>
     <loc>https://www.localglobalweb.com/process</loc>
     <lastmod>2025-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
   <url>
     <loc>https://www.localglobalweb.com/faq</loc>
     <lastmod>2025-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  
+  <!-- SEO-Optimized Web Design Pages -->
+  <url>
+    <loc>https://www.localglobalweb.com/affordable-web-design</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.localglobalweb.com/responsive-web-design-dublin</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.localglobalweb.com/professional-web-design-dublin</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.localglobalweb.com/small-business-web-design-dublin</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Template Pages -->
+  <url>
+    <loc>https://www.localglobalweb.com/templates/aqua-fusion</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.localglobalweb.com/templates/aqua-fusion/about</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.localglobalweb.com/templates/aqua-fusion/contact</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.localglobalweb.com/templates/aqua-fusion/portfolio</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.localglobalweb.com/templates/aqua-fusion/services</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Legal Pages -->
   <url>
     <loc>https://www.localglobalweb.com/terms</loc>
     <lastmod>2025-01-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  
   <url>
     <loc>https://www.localglobalweb.com/privacy</loc>
     <lastmod>2025-01-30</lastmod>
