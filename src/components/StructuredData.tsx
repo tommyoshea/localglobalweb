@@ -11,11 +11,11 @@ const StructuredData = () => {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "LocalGlobalWeb - Dublin Web Designers",
-      "url": "https://localglobalweb.com",
+      "url": "https://www.localglobalweb.com",
       "description": "Professional web design services in Dublin, Ireland. Expert website designers creating affordable, responsive websites for small businesses.",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://localglobalweb.com/search?q={search_term_string}",
+        "target": "https://www.localglobalweb.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     })
@@ -28,7 +28,7 @@ const StructuredData = () => {
       "@type": "LocalBusiness",
       "name": "LocalGlobalWeb - Dublin Web Designers",
       "description": "Professional web design services in Dublin, Ireland. Expert website designers creating affordable, responsive websites for small businesses.",
-      "url": "https://localglobalweb.com",
+      "url": "https://www.localglobalweb.com",
       "telephone": "+353892781782",
       "email": "hello@localglobalweb.com",
       "address": {

@@ -16,6 +16,17 @@ Allow: /affordable-web-design
 Allow: /responsive-web-design-dublin
 Allow: /professional-web-design-dublin
 Allow: /small-business-web-design-dublin
+Allow: /web-design-leixlip
+Allow: /web-design-maynooth
+Allow: /web-design-lucan
+Allow: /web-design-celbridge
+Allow: /web-design-blanchardstown
+Allow: /web-design-dunboyne
+Allow: /web-design-clonsilla
+Allow: /web-design-tallaght
+Allow: /web-design-citywest
+Allow: /web-design-sandyford
+Allow: /web-design-clonskeagh
 Allow: /templates/
 Allow: /about
 Allow: /contact
