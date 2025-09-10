@@ -2,6 +2,26 @@
 
 import { useEffect } from 'react'
 
+// TypeScript interfaces for Performance API
+interface PerformanceEventTiming extends PerformanceEntry {
+  processingStart: number
+  processingEnd: number
+  cancelable: boolean
+}
+
+interface LayoutShift extends PerformanceEntry {
+  value: number
+  hadRecentInput: boolean
+  lastInputTime: number
+  sources: LayoutShiftAttribution[]
+}
+
+interface LayoutShiftAttribution {
+  node?: Node
+  previousRect: DOMRectReadOnly
+  currentRect: DOMRectReadOnly
+}
+
 const PerformanceMonitor = () => {
   useEffect(() => {
     // Monitor Core Web Vitals
@@ -21,8 +41,11 @@ const PerformanceMonitor = () => {
       // First Input Delay (FID)
       const fidObserver = new PerformanceObserver((list) => {
         for (const entry of list.getEntries()) {
-          console.log('FID:', entry.processingStart - entry.startTime)
-          // Send to analytics if needed
+          const fidEntry = entry as PerformanceEventTiming
+          if (fidEntry.processingStart) {
+            console.log('FID:', fidEntry.processingStart - fidEntry.startTime)
+            // Send to analytics if needed
+          }
         }
       })
       
@@ -32,8 +55,9 @@ const PerformanceMonitor = () => {
       let clsValue = 0
       const clsObserver = new PerformanceObserver((list) => {
         for (const entry of list.getEntries()) {
-          if (!entry.hadRecentInput) {
-            clsValue += entry.value
+          const clsEntry = entry as LayoutShift
+          if (!clsEntry.hadRecentInput) {
+            clsValue += clsEntry.value
           }
         }
         console.log('CLS:', clsValue)
