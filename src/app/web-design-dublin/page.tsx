@@ -352,14 +352,14 @@ export default function WebDesignDublinPage() {
                 </ul>
 
                 <button
-                  onClick={handlePhoneClick}
+                  onClick={() => window.location.href = '/contact'}
                   className={`w-full py-4 px-6 rounded-xl font-semibold text-lg transition-all duration-300 ${
                     pkg.popular
                       ? 'bg-blue-600 hover:bg-blue-700 text-white'
                       : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
                   }`}
                   tabIndex={0}
-                  aria-label={`Get ${pkg.name} for ${pkg.price}`}
+                  aria-label={`Get ${pkg.name} for ${pkg.price} - Go to contact form`}
                 >
                   Get Started - {pkg.price}
                 </button>
