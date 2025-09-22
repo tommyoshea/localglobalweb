@@ -34,8 +34,8 @@ import {
 export default function WebDesignDublinPage() {
   useEffect(() => {
     // Track page view for analytics
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'page_view', {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'page_view', {
         page_title: 'Web Design Dublin | Professional Website Designers Dublin',
         page_location: window.location.href,
       })
@@ -43,8 +43,8 @@ export default function WebDesignDublinPage() {
   }, [])
 
   const handlePhoneClick = () => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'phone_click', {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'phone_click', {
         event_category: 'engagement',
         event_label: 'Call Tommy 0892781782',
       })
@@ -53,8 +53,8 @@ export default function WebDesignDublinPage() {
   }
 
   const handleEmailClick = () => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'email_click', {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'email_click', {
         event_category: 'engagement',
         event_label: 'Contact Email',
       })
