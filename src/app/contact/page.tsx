@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { useSearchParams } from 'next/navigation'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import LoadingSpinner from '@/components/LoadingSpinner'
 import { Mail, Phone, MapPin, Send, CheckCircle, ArrowRight, Sparkles, Rocket, Star, Zap, Globe, Shield } from 'lucide-react'
 
 function ContactForm() {
@@ -690,7 +691,7 @@ function ContactForm() {
 
 export default function Contact() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<LoadingSpinner />}>
       <ContactForm />
     </Suspense>
   )
