@@ -46,6 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // SEO-Optimized Web Design Pages
     {
+      url: `${baseUrl}/web-design-dublin`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
       url: `${baseUrl}/affordable-web-design`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
